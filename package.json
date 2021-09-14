@@ -1,0 +1,25 @@
+{
+  "name": "NASA-Project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "npm run watch --prefix server",
+    "client": "npm start --prefix client",
+    "deploy": "npm run build --prefix client && npm start --prefix server",
+    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
+    "watch": "concurrently --kill-others \"npm run server\" \" npm run client\" ",
+    "test": " \"npm test --prefix server\" \"npm test --prefix client\" --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.2.1",
+    "supertest": "^6.1.6"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "morgan": "^1.10.0"
+  }
+}
