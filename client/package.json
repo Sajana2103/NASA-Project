@@ -13,7 +13,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build && npm run postbuild",
     "postbuild" : "XCOPY /Y \"build\\*\" \"..\\server\\public\" /E/H",
-    "test": "react-scripts test",
+    "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
