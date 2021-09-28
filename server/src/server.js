@@ -8,7 +8,7 @@ const app = require('./app.js')
 
 const {loadPlanetsData} = require('./models/planets.models')
 
-const PORT = process.env.PORT || 8000
+const PORT = process.env.PORT || 8000 
 
 const server = http.createServer(app)
 
@@ -21,5 +21,6 @@ async function startServer(){
         console.log(`Server is listening on ${PORT}`)
 })
 }
+const aa = 1222
 
 startServer()

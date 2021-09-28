@@ -13,7 +13,7 @@
     "start": "react-scripts start",
     "build": "BUILD_PATH=../server/public react-scripts build",
     "postbuild": "BUILD_PATH=../server/public react-scripts build",
-    "test": "react-scripts test --passWithNoTests",
+    "test": " test --passWithNoTests",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
