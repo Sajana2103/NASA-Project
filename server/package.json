@@ -20,8 +20,8 @@
   },
   "scripts": {
     "watch": "nodemon src/server.js",
-    "test": "jest ",
-    "test-watch": "jest --watch --passWithNoTests",
+    "test": "jest --passWithNoTests",
+    "test-watch": "jest --watch ",
     "start": "node src/server.js",
     "cluster": "pm2 start src/server.js -i max",
     "kill-cluster": "pm2 delete server"
