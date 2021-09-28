@@ -11,8 +11,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && npm run postbuild",
-    "postbuild": "XCOPY /Y \"build\\*\" \"..\\server\\public\" /E/H",
+    "build": "BUILD_PATH=../server/public react-scripts build",
+    "postbuild": "BUILD_PATH=../server/public react-scripts build",
     "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject"
   },
