@@ -11,11 +11,7 @@ jobs:
     strategy:
       matrix:
         node-version: [14.x, 16.x]
-<<<<<<< HEAD
     runs-on: ubuntu-latest
-=======
-    runs-on: linux
->>>>>>> f613e1a7f2323c57f933fe7769d632deb3738788
     steps: 
       - uses: actions/checkout@v2
       - name: use Node.js version ${{ matrix.node-version}}
